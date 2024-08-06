@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Navbar from "./Navbar";
 
-import heroImg from "../media/hero_illustration.jpg";
+import heroImg from "../media/hero_image.png";
 import CustomButton from "./CustomButton";
 
 const Hero = () => {

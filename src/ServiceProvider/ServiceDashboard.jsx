@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './user.css';
 import { useNavigate } from 'react-router-dom';
 import { Nav, Tab } from 'react-bootstrap';
-import logo from '../media/logo(1).png';
+import logo from '../media/logo.png';
 import { styled } from "@mui/material";
 import Axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
