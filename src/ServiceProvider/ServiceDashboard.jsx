@@ -18,8 +18,6 @@ import Avatar from '@mui/material/Avatar';
 import BookingList from './BookingList';
 import { useDropzone } from 'react-dropzone';
 
-
-
 const UserDashboard = () => {
   const [serviceProviderData, setServiceProviderData] = useState({});
   const [firstName, setFirstName] = useState('');
@@ -63,7 +61,7 @@ const UserDashboard = () => {
           setDescription(response.data.Description);
         })
         .catch((error) => {
-          console.error('Error fetching service provider data:', error);
+          console.error('Error fetching tour guide data:', error);
 
         });
     } else {
@@ -71,7 +69,6 @@ const UserDashboard = () => {
       //  redirect to the login page
     }
   }, []);
-
 
   const handleFirstNameChange = (e) => {
     setFirstName(e.target.value);
@@ -188,7 +185,7 @@ const UserDashboard = () => {
   };
 
 
-  const { acceptedFiles, getRootProps, getInputProps } = useDropzone({
+  const { getRootProps, getInputProps } = useDropzone({
     accept: '.pdf, .doc, .docx',
     onDrop: (acceptedFiles) => {
       // acceptedFiles is expected to be an array
@@ -479,7 +476,7 @@ const UserDashboard = () => {
                         <path d="M18 8a6 6 0 0 0-12 0"></path>
                         <path d="M3 13v1a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-1"></path>
                       </svg>
-                      Appointments
+                      Tours
                     </a>
 
                   </Nav>
@@ -878,7 +875,7 @@ const UserDashboard = () => {
                   {activeTab === 'notification' && (
                     <div className="tab-pane" id="notification">
                       <div className="tab-pane" id="notification">
-                        <h6>Appointments</h6>
+                        <h6>Tours</h6>
                         <hr />
                         <BookingList />
                       </div>

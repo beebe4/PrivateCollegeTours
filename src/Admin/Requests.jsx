@@ -5,12 +5,12 @@ import { confirmAlert } from 'react-confirm-alert';
 import 'react-confirm-alert/src/react-confirm-alert.css';
 import DoneIcon from '@mui/icons-material/Done';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 function ServiceProvidersTable() {
-  const [doneData, setDoneData] = useState(null);
+  const [, setDoneData] = useState(null);
   const [serviceproviderprofile, setServiceProviders] = useState([]);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function ServiceProvidersTable() {
         // After successful save and delete, fetch the updated data from approvedserviceprovider
         Axios.get('http://localhost:3001/api/approvedserviceprovider')
           .then((getResponse) => {
-            // Update the service providers data in your state
+            // Update the tour guides data in your state
             setServiceProviders(getResponse.data);
           })
           .catch((getErr) => {

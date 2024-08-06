@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ServiceProvidersTable from './ServiceProvidersTable';
 import HomeOwnersTable from './HomeOwnersTable';
 import Requests from './Requests';
-import { useNavigate } from 'react-router-dom';
 import ReportsTable from './ReportsTable';
 import './App.css';
 
@@ -20,7 +19,7 @@ function Home() {
       mobileNumber: '555-555-5555',
       rating: 4.5,
     },
-    // Add more service provider objects here
+    // Add more tour guide objects here
   ];
 
   const homeOwners = [
@@ -53,7 +52,7 @@ function Home() {
       mobileNumber: '555-555-5555',
       rating: 4.5,
     },
-    // Add more service provider objects here
+    // Add more tour guide objects here
   ];
 
   const toggleServiceProviders = () => {
@@ -106,7 +105,7 @@ function Home() {
 
         <div className='card' onClick={toggleReports}>
           <div className='card-inner'>
-            <h3>Appointments</h3>
+            <h3>Tours</h3>
             
           </div>
           <h1>00</h1>

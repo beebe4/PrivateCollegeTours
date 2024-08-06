@@ -1,7 +1,6 @@
 import { styled, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
-import houseCard from "../media/houseCard.png";
 import animation from "../media/d94971d66b9350ed48120ca65ac73a3d.gif";
 
 const Details = () => {
@@ -81,7 +80,7 @@ const Details = () => {
                 my: 3,
               }}
             >
-              Make an appointment, Quick & Easy.
+              Book a Tour, Quick & Easy.
             </Typography>
 
             <Typography
@@ -91,11 +90,11 @@ const Details = () => {
                 lineHeight: "27px",
               }}
             >
-              Choose your desired Services & Book an appointment with our 
-              Highly rated Service Providers. you can choose the filter through 
-              our trusted service providers according to thier ratings from previous appointment. 
-              Customer Satisfaction is paramount, we strive to fulfill homeowner's requirements by
-              connecting them with the approproate Service providers. 
+              Choose your desired College & Book a tour with our 
+              Highly rated Tour Guides. You can choose to filter through 
+              our trusted tour guides according to thier ratings from previous tours. 
+              Customer Satisfaction is paramount, we strive to fulfill parents's requirements by
+              connecting them with the approproate tour guide. 
             </Typography>
           </Box>
         </CustomBox>
@@ -109,7 +108,7 @@ const Details = () => {
             }}
           >
             <LargeText>2500+</LargeText>
-            <SmallText>Highly rated Service Providers</SmallText>
+            <SmallText>Highly rated Tour Guides</SmallText>
           </Box>
 
           <Box
@@ -131,7 +130,7 @@ const Details = () => {
             }}
           >
             <LargeText>3500+</LargeText>
-            <SmallText>Completed Services</SmallText>
+            <SmallText>Completed Tours</SmallText>
           </Box>
         </TextFlexbox>
       </Container>

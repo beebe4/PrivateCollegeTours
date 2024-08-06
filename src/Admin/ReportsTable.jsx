@@ -53,7 +53,7 @@ function ReportsTable() {
 
   return (
     <div className="service-provider-details">
-      <h3>Appointment Details</h3>
+      <h3>Tour Details</h3>
       <table>
         <thead>
           <tr>

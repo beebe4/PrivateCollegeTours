@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, TextField, Button, Select, MenuItem, FormControl, InputLabel, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Grid } from '@mui/material';
-import FormLabel from '@mui/joy/FormLabel';
+import { Box, TextField, Button, Select, MenuItem, FormControl, InputLabel, Typography, Grid } from '@mui/material';
 import Textarea from '@mui/joy/Textarea';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -16,12 +15,12 @@ const BookingForm = () => {
         booking_date: '',
         booking_time: ''
     });
-    const [openDialog, setOpenDialog] = useState(false);
-    const [confirmationMessage, setConfirmationMessage] = useState('');
-    const [bookedTimeSlots, setBookedTimeSlots] = useState([]);
+    const [, setOpenDialog] = useState(false);
+    const [, setConfirmationMessage] = useState('');
+    const [, setBookedTimeSlots] = useState([]);
 
     useEffect(() => {
-        // Fetch booked time slots for the selected service provider and date.
+        // Fetch booked time slots for the selected tour guide and date.
         fetchBookedTimeSlots(username, formData.booking_date);
     }, [username, formData.booking_date]);
 
@@ -87,11 +86,6 @@ const BookingForm = () => {
         });
     };
 
-    const handleCloseDialog = () => {
-        setOpenDialog(false);
-    };
-    
-
     return (
         <Grid container  spacing={0} justifyContent="center" // centers the items horizontally
         alignItems="center"
@@ -108,7 +102,7 @@ const BookingForm = () => {
                     onSubmit={handleSubmit}
                 >
                     <Typography variant="h5" align="center" gutterBottom>
-                        Book service provider {username}
+                        Book tour guide {username}
                     </Typography>
                     <TextField
                       

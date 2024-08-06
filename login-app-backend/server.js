@@ -521,7 +521,7 @@ app.post('/book', async (req, res) => {
     }
 
     if (result.length > 0) {
-      return res.status(400).json({ message: 'Service Provider is on another appointment' });
+      return res.status(400).json({ message: 'Service Provider is on another tour' });
     }
 
     const bookQuery = 'INSERT INTO bookings (u_username, username, booking_date, booking_time) VALUES (?, ?, ?, ?)'; // Include u_username in the INSERT query
@@ -693,7 +693,7 @@ app.post('/api/login', (req, res) => {
 
 //admin panel start here 
 
-// Create a new service provider
+// Create a new tour guide
 app.post('/api/serviceproviderprofile', (req, res) => {
   const newProvider = req.body;
   const query = 'INSERT INTO serviceproviderprofile SET ?';
@@ -707,7 +707,7 @@ app.post('/api/serviceproviderprofile', (req, res) => {
   });
 });
 
-// Fetch all service providers
+// Fetch all tour guides
 app.get('/api/serviceproviderprofile', (req, res) => {
   const query = 'SELECT * FROM serviceproviderprofile';
   db.query(query, (error, results) => {
@@ -720,7 +720,7 @@ app.get('/api/serviceproviderprofile', (req, res) => {
   });
 });
 
-// Create a new service provider
+// Create a new tour guide
 app.post('/api/serviceproviderprofile', (req, res) => {
   const newProvider = req.body;
   const query = 'INSERT INTO serviceproviderprofile SET ?';
@@ -734,7 +734,7 @@ app.post('/api/serviceproviderprofile', (req, res) => {
   });
 });
 
-// Update an existing service provider
+// Update an existing tour guide
 app.put('/api/serviceproviderprofile/:ID', (req, res) => {
   const ID = req.params.ID;
   const updatedProvider = req.body;
@@ -753,7 +753,7 @@ app.put('/api/serviceproviderprofile/:ID', (req, res) => {
   });
 });
 
-// API endpoint to delete a service provider
+// API endpoint to delete a tour guide
 app.delete('/api/serviceproviderprofile/:ID', (req, res) => {
   const ID = req.params.ID;
   const query = 'DELETE FROM serviceproviderprofile WHERE ID = ?';
@@ -920,7 +920,7 @@ app.delete('/api/approvedserviceprovider/:ID', (req, res) => {
   });
 });
 
-//saving approved service provider 
+//saving approved tour guide 
 app.post('/api/saveAndDeleteData', (req, res) => {
   const dataToSave = req.body; // Assuming your data is sent as a JSON object
 

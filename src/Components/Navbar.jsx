@@ -8,7 +8,6 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import EngineeringIcon from '@mui/icons-material/Engineering';
-import LoginIcon from '@mui/icons-material/Login';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import logoImg from "../media/logo.png";
@@ -24,7 +23,6 @@ import {
   styled,
 } from "@mui/material";
 import { useState } from "react";
-import { LinkOffTwoTone } from "@mui/icons-material";
 
 export const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState({
@@ -50,14 +48,14 @@ export const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "Services", "Appointments", "About us", "Contact"].map(
+        {["Home", "Services", "Tours", "About us", "Contact"].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
                   {index === 0 && <HomeIcon />}
                   {index === 1 && <MiscellaneousServicesIcon />}
-                  {index === 2 && < FeaturedPlayListIcon />}
+                  {index === 2 && <FeaturedPlayListIcon />}
                   {index === 3 && <ListAltIcon />}
                   {index === 4 && <ContactsIcon />}
                 </ListItemIcon>
@@ -121,8 +119,6 @@ export const Navbar = () => {
     },
   }));
 
-
-
   const Navigate = useNavigate();
   const bookApntmnt = () => {
     Navigate('/UsrLogin');
@@ -154,7 +150,7 @@ export const Navbar = () => {
         <NavbarLinksBox>
           <NavLink variant="body2">Home</NavLink>
           <NavLink variant="body2">Services</NavLink>
-          <NavLink variant="body2">Appointments</NavLink>
+          <NavLink variant="body2">Tours</NavLink>
           <NavLink variant="body2">About us</NavLink>
           <NavLink variant="body2">Contact</NavLink>
         </NavbarLinksBox>
@@ -169,24 +165,18 @@ export const Navbar = () => {
         }}
       >
 
-
         <Box sx={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <EngineeringIcon />
           <StyledLink to="/become-a-fixer">
-            <NavLink variant="body2">Become a Fixer</NavLink>
+            <NavLink variant="body2">Become a Tour Guide</NavLink>
           </StyledLink>
         </Box>
-
-
-
-
-
 
 <Link to="/UsrLogin" style={{ textDecoration: 'none' }}>
         <CustomButton
           backgroundColor="#0F1B4C"
           color="#fff"
-          buttonText="Book an Appoinment"
+          buttonText="Book an Tour"
         />
 </Link>
 

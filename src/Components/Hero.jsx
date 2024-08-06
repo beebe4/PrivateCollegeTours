@@ -1,4 +1,4 @@
-import { Box, Button, styled, Typography } from "@mui/material";
+import { Box, styled, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import React from "react";
 import { Link } from 'react-router-dom';
@@ -52,23 +52,23 @@ const Hero = () => {
                 mb: 4,
               }}
             >
-              Welcome to FixItNow 
+              Welcome to PrivateCollegeTours 
           </Typography>
             <Title variant="h1">
-              Bringing Convinence to your home
+              A REAL private college tour
             </Title>
             <Typography
               variant="body2"
               sx={{ fontSize: "18px", color: "#5A6473", my: 4 }}
             >
-              Fixlt Now represents the culmination of innovative technology. user-centric design, and a commitment to bridging the gap between homeowners and service professionals...
+              Private College Tours helps parents find honest college tours given by private students and shows a read day-in-the-life at your prospetive college...
             </Typography>
             <Link to="/ServiceProviderList" style={{ textDecoration: 'none' }}>
             <CustomButton
               backgroundColor="#0F1B4C"
               color="#fff"
               onClick={bookService} 
-              buttonText="Book a service"
+              buttonText="Book a tour"
               heroBtn={true}
             />
             </Link>

@@ -8,15 +8,15 @@ const AppointmentGuide = () => {
     <Container maxWidth="md" sx={{ my: 4 }}>
 
       <Typography variant="h3" sx={{ fontSize: "35px", fontWeight: "bold", color: "#000339", my: 3, textAlign: 'center' }}>
-        Appointment Guide
+        Tour Guide
       </Typography>
 
       <Box sx={{ typography: 'body1', mb: 4 }}>
         <Typography variant="h6" sx={{ my: 2 }}>
-        Step 1: Visit the FixItNow Website
+        Step 1: Visit the PrivateCollegeTours Website
         </Typography>
         <Typography sx={{ my: 2, lineHeight: 1.6 }}>
-        Open your preferred web browser and navigate to the FixItNow website (www.fixitnow.com).
+        Open your preferred web browser and navigate to the PrivateCollegeTours website (www.PrivateCollegeTours.com).
         </Typography>
 
         <Typography variant="h6" sx={{ my: 2 }}>
@@ -44,28 +44,28 @@ const AppointmentGuide = () => {
         Step 5: Choose Service Provider
         </Typography>
         <Typography sx={{ my: 2, lineHeight: 1.6 }}>
-        View the list of available service providers for your selected service. Review their profiles, including ratings, reviews, and service rates, to make an informed decision.
+        View the list of available tour guides for your selected service. Review their profiles, including ratings, reviews, and service rates, to make an informed decision.
         </Typography>
 
         <Typography variant="h6" sx={{ my: 2 }}>
-        Step 6: Schedule Appointment
+        Step 6: Schedule Tour
         </Typography>
         <Typography sx={{ my: 2, lineHeight: 1.6 }}>
-        After selecting your preferred service provider, click on the "Schedule Appointment" or "Book Now" button. Choose a convenient date and time for the service to be performed.
+        After selecting your preferred tour guide, click on the "Schedule Tour" or "Book Now" button. Choose a convenient date and time for the service to be performed.
         </Typography>
 
         <Typography variant="h6" sx={{ my: 2 }}>
         Step 7: Provide Details
         </Typography>
         <Typography sx={{ my: 2, lineHeight: 1.6 }}>
-        Fill in the necessary details, including your address, specific service requirements, and any other relevant information that the service provider might need to know.
+        Fill in the necessary details, including your address, specific service requirements, and any other relevant information that the tour guide might need to know.
         </Typography>
         
         <Typography variant="h6" sx={{ my: 2 }}>
         Step 8: Review and Confirm
         </Typography>
         <Typography sx={{ my: 2, lineHeight: 1.6 }}>
-        Carefully review the details of your appointment before confirming the booking. Ensure that the date, time, and service details are accurate.
+        Carefully review the details of your tour before confirming the booking. Ensure that the date, time, and service details are accurate.
         </Typography>
         <Typography variant="h6" sx={{ my: 2 }}>
           Step 9: Make Payment
@@ -74,10 +74,10 @@ const AppointmentGuide = () => {
           Depending on the website's payment policy, you might be required to make an upfront payment or pay after the service has been completed. Follow the payment instructions provided on the website.
         </Typography>
         <Typography variant="h6" sx={{ my: 2 }}>
-        Step 10: Appointment Confirmation
+        Step 10: Tour Confirmation
         </Typography>
         <Typography sx={{ my: 2, lineHeight: 1.6 }}>
-        Once the payment is processed, you will receive a confirmation of your appointment via email or a notification on the website. Make sure to keep the appointment details handy for future reference.
+        Once the payment is processed, you will receive a confirmation of your tour via email or a notification on the website. Make sure to keep the tour details handy for future reference.
 
 
         </Typography>
@@ -85,7 +85,7 @@ const AppointmentGuide = () => {
         Step 11: Post-Service Feedback
         </Typography>
         <Typography sx={{ my: 2, lineHeight: 1.6 }}>
-        After the service has been completed, you may be requested to provide feedback on the service provider's performance. Your feedback will contribute to the service provider's ratings and help other users make informed decisions.
+        After the service has been completed, you may be requested to provide feedback on the tour guide's performance. Your feedback will contribute to the tour guide's ratings and help other users make informed decisions.
         </Typography>
       </Box>
       <Footer/>

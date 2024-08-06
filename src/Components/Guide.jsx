@@ -76,7 +76,7 @@ const Guide = () => {
             textAlign: "center",
           }}
         >
-          A Quick Guide & Terms and Condtions to use FixItNow-All
+          A Quick Guide & Terms and Condtions to use PrivateCollegeTours-All
           in one Service Provider.
         </Typography>
       </CustomBox>
@@ -160,7 +160,7 @@ const Guide = () => {
       my: 1,
     }}
   >
-    Appoinment Guides
+    Tour Guides
   </Typography>
   <Link to="/AppGuide">
     <Box
@@ -175,7 +175,7 @@ const Guide = () => {
         variant="body2"
         sx={{ fontWeight: "bold", fontSize: "14px", color: "#0689FF" }}
       >
-        Appointments Guide
+        Tours Guide
       </Typography>
       <ArrowRightAltIcon style={{ color: "#0689FF" }} />
     </Box>

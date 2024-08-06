@@ -8,11 +8,9 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import HomeIcon from "@mui/icons-material/Home";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ContactsIcon from "@mui/icons-material/Contacts";
-import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import logoImg from "../media/logo.png";
 import { Container } from "@mui/system";
-import CustomButton from "./CustomButton";
 import {
   Drawer,
   List,
@@ -23,7 +21,6 @@ import {
   styled,
 } from "@mui/material";
 import { useState } from "react";
-import { LinkOffTwoTone } from "@mui/icons-material";
 
 export const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState({
@@ -49,7 +46,7 @@ export const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Home", "Services", "Appointments", "About us", "Contact"].map(
+        {["Home", "Services", "Tours", "About us", "Contact"].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
@@ -78,11 +75,6 @@ export const Navbar = () => {
       color: "#0F1B4C",
     },
   }));
-
-  const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-`;
 
   const NavbarLinksBox = styled(Box)(({ theme }) => ({
     display: "flex",
@@ -146,7 +138,7 @@ export const Navbar = () => {
         <NavbarLinksBox>
           <NavLink variant="body2">Home</NavLink>
           <NavLink variant="body2">Services</NavLink>
-          <NavLink variant="body2">Appointments</NavLink>
+          <NavLink variant="body2">Tours</NavLink>
           <NavLink variant="body2">About us</NavLink>
           <NavLink variant="body2">Contact</NavLink>
         </NavbarLinksBox>

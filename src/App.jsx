@@ -1,5 +1,4 @@
 import React from 'react';
-import {useState} from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -15,8 +14,6 @@ import UsrLogin from './Login/UsrLogin';
 import UserDashboard from './User/UserDashboard';
 import AdminLogin from './Admin/AdminLogin';
 
-
-
 import User from './Dashboard/User'; 
 import ServiceDashboard from './ServiceProvider/ServiceDashboard'; 
 import Custom from './ServiceProvider/CustomCard'; 
@@ -24,16 +21,11 @@ import ServiceProfile from './ServiceProvider/ServiceProviderProfile';
 import Bookings from './ServiceProvider/Booking'; 
 import BookingList from './ServiceProvider/BookingList'; 
 
-
-
-
-
 import FixerDetails from './Components/FixerDetails';
 import TermsCondition from './Components/TermsCondition';
-import AppointmentGuide from './Components/AppointmentGuide';
+import TourGuide from './Components/TourGuide';
 import CompleteGuide from './Components/CompleteGuide';
 import ServiceProviderList from './ServiceProvider/ServiceProviderList'; 
-
 
 import Header from './Admin/Header';
 import Sidebar from './Admin/Sidebar';
@@ -41,16 +33,13 @@ import Home from './Admin/Home';
 
 
 function App() {
-
- 
-
   return (
     <Router>
       
       <Routes>
       <Route path="/FixerDetails" element={<FixerDetails />} />
       <Route path="/Terms" element={<TermsCondition />} />
-      <Route path="/AppGuide" element={<AppointmentGuide />} />
+      <Route path="/AppGuide" element={<TourGuide />} />
       <Route path="/CompGuide" element={<CompleteGuide />} />
       <Route path="/BookingList" element={<BookingList />} />
 
@@ -94,7 +83,5 @@ function App() {
 
   );
 }
-
-
 
 export default App;
